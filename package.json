@@ -32,8 +32,8 @@
           "EnsembleStatConfig*",
           "MODEAnalysisConfig*",
           "PB2NCConfig*",
-          "STATAnalysisConfig",
-          "WaveletStatConfig"
+          "STATAnalysisConfig*",
+          "WaveletStatConfig*"
         ],
         "configuration": "./language-configuration.json"
       }

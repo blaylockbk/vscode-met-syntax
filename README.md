@@ -18,8 +18,8 @@ Basic syntax highlighting for Model Evaluation Tools (MET) config files.
           "EnsembleStatConfig*",
           "MODEAnalysisConfig*",
           "PB2NCConfig*",
-          "STATAnalysisConfig",
-          "WaveletStatConfig"
+          "STATAnalysisConfig*",
+          "WaveletStatConfig*"
         ],
 ```
 
