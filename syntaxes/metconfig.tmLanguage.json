@@ -72,7 +72,7 @@
       "patterns": [
         {
           "name": "keyword.control.metconfig",
-          "match": "\\b(NONE|BOTH|TRUE|FALSE|NEAREST|MEDIAN|DW_MEAN|PCTILE|UNION|NA)\\b"
+          "match": "\\b(NONE|BOTH|TRUE|FALSE|NEAREST|MEDIAN|DW_MEAN|PCTILE|UNION|NA|SQUARE)\\b"
         }
       ]
     },
