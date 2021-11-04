@@ -5,7 +5,7 @@
 
 Basic syntax highlighting for Model Evaluation Tools (MET) config files.
 
-<img src="images/screenshot.png" width=400>
+<img src="https://github.com/blaylockbk/vscode-MET-Config/blob/main/images/screenshot.png?raw=true" width=400>
 
 
 
