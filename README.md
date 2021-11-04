@@ -1,6 +1,42 @@
-# met-config README
+> My first ever VS Code extension. 😁
 
-This is the README for your extension "met-config". After writing up a brief description, we recommend including the following sections.
+# VS Code: MET Config
+
+
+Basic syntax highlighting for Model Evaluation Tools (MET) config files.
+
+<img src="images/screenshot.png" width=400>
+
+
+
+- Will highlight files that have the extension `.metconfig`
+- Will highlight files with the following names: 
+```
+"filenamePatterns": [
+          "PointStatConfig*",
+          "GridStatConfig*",
+          "EnsembleStatConfig*",
+          "MODEAnalysisConfig*",
+          "PB2NCConfig*",
+          "STATAnalysisConfig",
+          "WaveletStatConfig"
+        ],
+```
+
+- vscode can autodect the language in a file (wonder how good this works??)
+- You can manually set the file association in the settings
+
+```json
+"files.associations": {
+    "PointStatConfig.txt": "met-config",
+    "GridStatConfig.txt": "met-config",
+}
+```
+
+## Install
+Until I figure out how to publish this on the VS Code marketplace, you should just clone this repository and put the folder into your `.vscode/extensions` folder.
+
+<br><br><br><br><br>
 
 ## Features
 
