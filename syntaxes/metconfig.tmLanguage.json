@@ -1,0 +1,100 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "MET-Config",
+  "patterns": [
+    {
+      "include": "#number"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#options"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    }
+  ],
+  "repository": {
+    "number": {
+      "name": "constant.numeric.metconfig",
+      "patterns": [
+        {
+          "include": "#number-float"
+        },
+        {
+          "include": "#number-dec"
+        },
+        {
+          "name": "invalid.illegal.name.metconfig",
+          "match": "\\b[0-9]+\\w+"
+        }
+      ]
+    },
+    "number-float": {
+      "name": "constant.numeric.float.metconfig",
+      "match": "(?x)\n  (?<! \\w)(?:\n    (?:\n      \\.[0-9](?: _?[0-9] )*\n      |\n      [0-9](?: _?[0-9] )* \\. [0-9](?: _?[0-9] )*\n      |\n      [0-9](?: _?[0-9] )* \\.\n    ) (?: [eE][+-]?[0-9](?: _?[0-9] )* )?\n    |\n    [0-9](?: _?[0-9] )* (?: [eE][+-]?[0-9](?: _?[0-9] )* )\n  )([jJ])?\\b\n",
+      "captures": {
+        "1": {
+          "name": "storage.type.imaginary.number.metconfig"
+        }
+      }
+    },
+    "number-dec": {
+      "name": "constant.numeric.dec.metconfig",
+      "match": "(?x)\n  (?<![\\w\\.])(?:\n      [1-9](?: _?[0-9] )*\n      |\n      0+\n      |\n      [0-9](?: _?[0-9] )* ([jJ])\n      |\n      0 ([0-9]+)(?![eE\\.])\n  )\\b\n",
+      "captures": {
+        "1": {
+          "name": "storage.type.imaginary.number.metconfig"
+        },
+        "2": {
+          "name": "invalid.illegal.dec.metconfig"
+        }
+      }
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.metconfig",
+          "match": "(//).*",
+          "captures": {
+            "1": {
+              "name": "punctuation.definition.comment.metconfig"
+            }
+          }
+        }
+      ]
+    },
+    "options": {
+      "patterns": [
+        {
+          "name": "keyword.control.metconfig",
+          "match": "\\b(NONE|BOTH|TRUE|FALSE|NEAREST|MEDIAN|DW_MEAN|PCTILE|UNION|NA)\\b"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.metconfig",
+          "match": "\\b(if|while|for|return)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.metconfig",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.metconfig",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "source.metconfig"
+}
