@@ -1,11 +1,11 @@
 <div align=center>
-<img src="https://github.com/blaylockbk/vscode-MET-Config/blob/main/images/met_config_logo.png?raw=true" width=200px>
+<img src="https://github.com/blaylockbk/vscode-metconfig/blob/main/images/metconfig_logo.png?raw=true" width=200px>
 
 <!--Badges-->
 
-<a href="https://github.com/blaylockbk/vscode-met-config/issues"><img src="https://img.shields.io/github/issues/blaylockbk/vscode-met-config?color=blue"></a>
-<a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-config"><img src="https://img.shields.io/visual-studio-marketplace/v/brian-blaylock.met-config"></a>
-<a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-config"><img src="https://img.shields.io/visual-studio-marketplace/d/brian-blaylock.met-config?label=VS%20Code%20Marketplace%20Downloads"></a>
+<a href="https://github.com/blaylockbk/vscode-metconfig/issues"><img src="https://img.shields.io/github/issues/blaylockbk/vscode-metconfig?color=blue"></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.metconfig"><img src="https://img.shields.io/visual-studio-marketplace/v/brian-blaylock.metconfig"></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.metconfig"><img src="https://img.shields.io/visual-studio-marketplace/d/brian-blaylock.metconfig"></a>
 
 <!--(end badges)-->
 </div>
@@ -50,7 +50,7 @@ For any other files, you should manually set the file association in your settin
 
 ## Install
 
-Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-config).
+Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=brian-blaylock.metconfig).
 
 Or, you can clone this repository and put the folder into your `~/.vscode/extensions` folder.
 
