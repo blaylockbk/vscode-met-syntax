@@ -39,7 +39,7 @@
     "environment-variables": {
       "patterns": [
         {
-          "match": "\\${.*}",
+          "match": "\\${?.*?}",
           "name": "entity.name.tag.metconfig"
         }
       ]
@@ -106,7 +106,7 @@
           "name": "constant.character.escape.metconfig"
         },
         {
-          "match": "\\${.*}",
+          "match": "\\${?.*?}",
           "name": "entity.name.tag.metconfig"
         }
       ]
