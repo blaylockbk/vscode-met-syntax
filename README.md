@@ -1,5 +1,5 @@
 <div align=center>
-<img src="https://github.com/blaylockbk/vscode-metconfig/blob/main/images/metconfig_logo.png?raw=true" width=200px>
+<img src="https://github.com/blaylockbk/vscode-metconfig/blob/main/images/metconfig_logo.png?raw=true" width=250px>
 
 <!--Badges-->
 

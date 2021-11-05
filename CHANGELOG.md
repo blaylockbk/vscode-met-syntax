@@ -1,9 +1,19 @@
 # Change Log
 
-All notable changes to the "met-config" extension will be documented in this file.
+## 0.0.4
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Fixed [#3](https://github.com/blaylockbk/vscode-metconfig/issues/3) - Improved the regex expression to match environment variables.
 
-## [Unreleased]
+## 0.0.3
+
+- Fixed broken links in the README
+
+## 0.0.2
+
+- changed name from `MET-Config` to `metconfig` to keep things simple.
+- Unpublished 0.0.1 and republished under the new name.
+
+## 0.0.1
 
 - Initial release
+- Just figuring my way around publishing a VS Code extension
