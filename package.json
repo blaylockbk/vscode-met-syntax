@@ -1,26 +1,26 @@
 {
   "name": "met-config",
-  "displayName": "MET-Config",
+  "displayName": "MET config",
   "description": "Syntax highlighting for Model Evaluation Tools (MET) config files.",
   "repository": {
     "type": "git",
     "url": "https://github.com/blaylockbk/vscode-MET-Config.git"
   },
   "version": "0.0.1",
-  "publisher": "blaylockbk",
+  "publisher": "brian-blaylock",
   "engines": {
     "vscode": "^1.62.0"
   },
   "categories": [
     "Programming Languages"
   ],
-  "icon": "images/met_logo.png",
+  "icon": "images/met_config_logo.png",
   "contributes": {
     "languages": [
       {
         "id": "metconfig",
         "aliases": [
-          "MET-Config",
+          "MET-config",
           "metconfig"
         ],
         "extensions": [
