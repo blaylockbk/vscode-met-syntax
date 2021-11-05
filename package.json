@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/blaylockbk/vscode-metconfig.git"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "brian-blaylock",
   "engines": {
     "vscode": "^1.62.0"
