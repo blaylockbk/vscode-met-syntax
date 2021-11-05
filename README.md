@@ -1,16 +1,20 @@
-> My first ever VS Code extension. 😁
+<div align=center>
+<img src="https://github.com/blaylockbk/vscode-MET-Config/blob/main/images/met_config_logo.png?raw=true" width=200px>
+</div>
 
 # VS Code: MET Config
 
+> My first ever VS Code extension. 😁
+
+> This is not an extension developed by DTC.
 
 Basic syntax highlighting for Model Evaluation Tools (MET) config files.
 
 <img src="https://github.com/blaylockbk/vscode-MET-Config/blob/main/images/screenshot.png?raw=true" width=400>
 
-
-
 - Will highlight files that have the extension `.metconfig`
-- Will highlight files with the following names: 
+- Will highlight files with the following names:
+
 ```
 "filenamePatterns": [
           "PointStatConfig*",
@@ -34,6 +38,7 @@ Basic syntax highlighting for Model Evaluation Tools (MET) config files.
 ```
 
 ## Install
+
 Until I figure out how to publish this on the VS Code marketplace, you should just clone this repository and put the folder into your `.vscode/extensions` folder.
 
 <br><br><br><br><br>
@@ -60,8 +65,8 @@ For example:
 
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+- `myExtension.enable`: enable/disable this extension
+- `myExtension.thing`: set to `blah` to do something
 
 ## Known Issues
 
@@ -83,19 +88,19 @@ Fixed issue #.
 
 Added features X, Y, and Z.
 
------------------------------------------------------------------------------------------------------------
+---
 
 ## Working with Markdown
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+**Note:** You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
+- Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
+- Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
 
 ### For more information
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
