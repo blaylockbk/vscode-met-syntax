@@ -22,7 +22,9 @@ vsce publish
 You will need a personal access token.
 https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token
 
-( Do I really have to do that every time? ) 
+( Do I really have to do that every time? )
 
 It should show here in a few minutes:
 https://marketplace.visualstudio.com/items?itemName=brian-blaylock.metconfig
+
+Manage the extension: https://marketplace.visualstudio.com/manage/publishers/brian-blaylock
