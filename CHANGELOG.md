@@ -3,6 +3,7 @@
 ## 0.0.4
 
 - Fixed [#3](https://github.com/blaylockbk/vscode-metconfig/issues/3) - Improved the regex expression to match environment variables.
+- Updated logo to have white background (easer to be seen with dark theme background)
 
 ## 0.0.3
 

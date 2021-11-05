@@ -31,13 +31,13 @@ It highlights the following:
 
 Highlighting is applied to files with the extension `.metconfig` and to files with the following filename patterns:
 
-- `PointStatConfig*`
-- `GridStatConfig*`
-- `EnsembleStatConfig*`
-- `MODEAnalysisConfig*`
-- `PB2NCConfig*`
-- `STATAnalysisConfig*`
-- `WaveletStatConfig*`
+- `*PointStatConfig*`
+- `*GridStatConfig*`
+- `*EnsembleStatConfig*`
+- `*MODEAnalysisConfig*`
+- `*PB2NCConfig*`
+- `*STATAnalysisConfig*`
+- `*WaveletStatConfig*`
 
 For any other files, you should manually set the file association in your settings. For example,
 

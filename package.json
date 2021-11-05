@@ -14,7 +14,7 @@
   "categories": [
     "Programming Languages"
   ],
-  "icon": "images/metconfig_logo.png",
+  "icon": "images/metconfig_logo_white.png",
   "contributes": {
     "languages": [
       {
@@ -27,13 +27,13 @@
           ".metconfig"
         ],
         "filenamePatterns": [
-          "PointStatConfig*",
-          "GridStatConfig*",
-          "EnsembleStatConfig*",
-          "MODEAnalysisConfig*",
-          "PB2NCConfig*",
-          "STATAnalysisConfig*",
-          "WaveletStatConfig*"
+          "*PointStatConfig*",
+          "*GridStatConfig*",
+          "*EnsembleStatConfig*",
+          "*MODEAnalysisConfig*",
+          "*PB2NCConfig*",
+          "*STATAnalysisConfig*",
+          "*WaveletStatConfig*"
         ],
         "configuration": "./language-configuration.json"
       }
