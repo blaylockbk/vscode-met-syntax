@@ -1,16 +1,21 @@
 <div align=center>
 <img src="https://github.com/blaylockbk/vscode-MET-Config/blob/main/images/met_config_logo.png?raw=true" width=200px>
+
+<!--Badges-->
+<a href="https://github.com/blaylockbk/vscode-met-config/issues"><img src="https://img.shields.io/github/issues/blaylockbk/vscode-met-config?color=blue"></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-config"><img src="https://img.shields.io/visual-studio-marketplace/v/brian-blaylock.met-config"></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-config"><img src="https://img.shields.io/visual-studio-marketplace/d/brian-blaylock.met-config?label=VS%20Code%20Marketplace%20Downloads"></a>
 </div>
 
-# VS Code: MET Config
+> My first ever VS Code extension 😁 inspired by [vscode-cylc](https://github.com/cylc/vscode-cylc), [mplstyle](https://github.com/yy0931/vscode-mplstyle), and [magic-python](https://github.com/MagicStack/MagicPython). This is not an extension developed by [DTC](https://dtcenter.org/community-code/model-evaluation-tools-met). I'm just a MET user.
 
-> My first ever VS Code extension. 😁
+# About
 
-> This is not an extension developed by DTC.
+MET Config is a VS Code extension for basic syntax highlighting for Model Evaluation Tools (MET) [configuration files](https://met.readthedocs.io/en/latest/Users_Guide/config_options.html).
 
-Basic syntax highlighting for Model Evaluation Tools (MET) config files.
+As an alternative, you could just use the [C/C++ Themes](https://github.com/Microsoft/vscode-cpptools) because the syntax is similar enough.
 
-<img src="https://github.com/blaylockbk/vscode-MET-Config/blob/main/images/screenshot.png?raw=true" width=400>
+<img src="https://github.com/blaylockbk/vscode-MET-Config/blob/main/images/screenshots.png?raw=true" width=400>
 
 - Will highlight files that have the extension `.metconfig`
 - Will highlight files with the following names:

@@ -1,6 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "MET-Config",
+  "name": "metconfig",
+  "scopeName": "source.metconfig",
   "patterns": [
     {
       "include": "#number"
@@ -16,9 +17,41 @@
     },
     {
       "include": "#strings"
+    },
+    {
+      "include": "#environment-variables"
     }
   ],
   "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "captures": {
+            "1": {
+              "name": "punctuation.definition.comment.metconfig"
+            }
+          },
+          "match": "(//).*",
+          "name": "comment.line.metconfig"
+        }
+      ]
+    },
+    "environment-variables": {
+      "patterns": [
+        {
+          "match": "\\${.*}",
+          "name": "entity.name.tag.metconfig"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "match": "\\b(if|while|for|return)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
     "number": {
       "name": "constant.numeric.metconfig",
       "patterns": [
@@ -29,23 +62,12 @@
           "include": "#number-dec"
         },
         {
-          "name": "invalid.illegal.name.metconfig",
-          "match": "\\b[0-9]+\\w+"
+          "match": "\\b[0-9]+\\w+",
+          "name": "invalid.illegal.name.metconfig"
         }
       ]
     },
-    "number-float": {
-      "name": "constant.numeric.float.metconfig",
-      "match": "(?x)\n  (?<! \\w)(?:\n    (?:\n      \\.[0-9](?: _?[0-9] )*\n      |\n      [0-9](?: _?[0-9] )* \\. [0-9](?: _?[0-9] )*\n      |\n      [0-9](?: _?[0-9] )* \\.\n    ) (?: [eE][+-]?[0-9](?: _?[0-9] )* )?\n    |\n    [0-9](?: _?[0-9] )* (?: [eE][+-]?[0-9](?: _?[0-9] )* )\n  )([jJ])?\\b\n",
-      "captures": {
-        "1": {
-          "name": "storage.type.imaginary.number.metconfig"
-        }
-      }
-    },
     "number-dec": {
-      "name": "constant.numeric.dec.metconfig",
-      "match": "(?x)\n  (?<![\\w\\.])(?:\n      [1-9](?: _?[0-9] )*\n      |\n      0+\n      |\n      [0-9](?: _?[0-9] )* ([jJ])\n      |\n      0 ([0-9]+)(?![eE\\.])\n  )\\b\n",
       "captures": {
         "1": {
           "name": "storage.type.imaginary.number.metconfig"
@@ -53,48 +75,41 @@
         "2": {
           "name": "invalid.illegal.dec.metconfig"
         }
-      }
+      },
+      "match": "(?x)\n  (?<![\\w\\.])(?:\n      [1-9](?: _?[0-9] )*\n      |\n      0+\n      |\n      [0-9](?: _?[0-9] )* ([jJ])\n      |\n      0 ([0-9]+)(?![eE\\.])\n  )\\b\n",
+      "name": "constant.numeric.dec.metconfig"
     },
-    "comments": {
-      "patterns": [
-        {
-          "name": "comment.line.metconfig",
-          "match": "(//).*",
-          "captures": {
-            "1": {
-              "name": "punctuation.definition.comment.metconfig"
-            }
-          }
+    "number-float": {
+      "captures": {
+        "1": {
+          "name": "storage.type.imaginary.number.metconfig"
         }
-      ]
+      },
+      "match": "(?x)\n  (?<! \\w)(?:\n    (?:\n      \\.[0-9](?: _?[0-9] )*\n      |\n      [0-9](?: _?[0-9] )* \\. [0-9](?: _?[0-9] )*\n      |\n      [0-9](?: _?[0-9] )* \\.\n    ) (?: [eE][+-]?[0-9](?: _?[0-9] )* )?\n    |\n    [0-9](?: _?[0-9] )* (?: [eE][+-]?[0-9](?: _?[0-9] )* )\n  )([jJ])?\\b\n",
+      "name": "constant.numeric.float.metconfig"
     },
     "options": {
       "patterns": [
         {
-          "name": "keyword.control.metconfig",
-          "match": "\\b(NONE|BOTH|TRUE|FALSE|NEAREST|MEDIAN|DW_MEAN|PCTILE|UNION|NA|SQUARE)\\b"
-        }
-      ]
-    },
-    "keywords": {
-      "patterns": [
-        {
-          "name": "keyword.control.metconfig",
-          "match": "\\b(if|while|for|return)\\b"
+          "match": "\\b(NONE|BOTH|TRUE|FALSE|NEAREST|MEDIAN|DW_MEAN|PCTILE|UNION|NA|SQUARE)\\b",
+          "name": "keyword.control.metconfig"
         }
       ]
     },
     "strings": {
-      "name": "string.quoted.double.metconfig",
       "begin": "\"",
       "end": "\"",
+      "name": "string.quoted.double.metconfig",
       "patterns": [
         {
-          "name": "constant.character.escape.metconfig",
-          "match": "\\\\."
+          "match": "\\\\.",
+          "name": "constant.character.escape.metconfig"
+        },
+        {
+          "match": "\\${.*}",
+          "name": "entity.name.tag.metconfig"
         }
       ]
     }
-  },
-  "scopeName": "source.metconfig"
+  }
 }
