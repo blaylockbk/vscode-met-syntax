@@ -28,3 +28,8 @@ It should show here in a few minutes:
 https://marketplace.visualstudio.com/items?itemName=brian-blaylock.metconfig
 
 Manage the extension: https://marketplace.visualstudio.com/manage/publishers/brian-blaylock
+
+
+# MET logo colors
+- Black
+- Orange #f58224

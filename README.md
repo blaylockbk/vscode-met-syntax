@@ -27,7 +27,7 @@ Syntax highlighting can help you visually understand MET configuration file stru
 - numbers
 - keywords (TRUE, FALSE, NONE, UNION, NA, SQUARE, etc.).
 
-<img src="https://github.com/blaylockbk/vscode-MET-Config/blob/main/images/screenshots.png?raw=true">
+<img src="https://raw.githubusercontent.com/blaylockbk/vscode-met-syntax/main/images/compare.png">
 
 Highlighting is applied to files with the extension `.metconfig` and to files with the following filename patterns:
 
