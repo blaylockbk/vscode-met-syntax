@@ -43,7 +43,7 @@ For any other files, you should manually set the file association in your settin
 
 ```json
 "files.associations": {
-    "myMETConfigFile": "met-syntax",
+    "myMETConfigFile": "metconfig",
 }
 ```
 
@@ -51,11 +51,11 @@ For any other files, you should manually set the file association in your settin
 
 Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-syntax).
 
-Or, you can clone this repository into your `~/.vscode/extensions` folder.
+Or, you can clone this repository into your `~/.vscode/extensions/` folder.
 
 ## Potential Improvements
 
-I threw this together quickly after watching a tutorial, but there is potential with this extension to do so much more! If you want to make improvements, your pull requests are welcomed.
+This is my first VS Code extension. I threw this together quickly after watching a tutorial, but there is potential with this extension to do so much more! If you want to make improvements, your pull requests are welcomed.
 
 - snippets
 - code validation
