@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/blaylockbk/vscode-met-syntax.git"
   },
-  "version": "0.0.3",
+  "version": "0.0.1",
   "publisher": "brian-blaylock",
   "engines": {
     "vscode": "^1.62.0"
@@ -20,7 +20,7 @@
       {
         "id": "metconfig",
         "aliases": [
-          "MET config",
+          "MET-config",
           "metconfig"
         ],
         "extensions": [
