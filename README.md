@@ -18,8 +18,6 @@
 
 **MET syntax** is a VS Code extension for basic syntax highlighting of [Model Evaluation Tools](https://dtcenter.org/community-code/model-evaluation-tools-met) (MET) [configuration files](https://met.readthedocs.io/en/latest/Users_Guide/config_options.html).
 
-This extension currently looks best with dark themes in VS Code.
-
 Syntax highlighting can help you visually understand MET configuration file structure and help you catch errors. The following are highlighted:
 
 - comments
