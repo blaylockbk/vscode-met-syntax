@@ -14,7 +14,7 @@
   "categories": [
     "Programming Languages"
   ],
-  "icon": "images/met-syntax_logo.png",
+  "icon": "images/met-syntax_logo_white.png",
   "contributes": {
     "languages": [
       {

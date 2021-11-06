@@ -1,5 +1,5 @@
 <div align=center>
-<img src="https://github.com/blaylockbk/vscode-met-syntax/blob/main/images/met-syntax_logo.png?raw=true" width=250px>
+<img src="https://github.com/blaylockbk/vscode-met-syntax/blob/main/images/met-syntax_logo_white.png?raw=true" width=250px>
 
 <!--Badges-->
 
