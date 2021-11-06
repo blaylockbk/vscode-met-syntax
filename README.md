@@ -1,11 +1,11 @@
 <div align=center>
-<img src="https://github.com/blaylockbk/vscode-metconfig/blob/main/images/met-syntax_logo.drawio.png?raw=true" width=250px>
+<img src="https://github.com/blaylockbk/vscode-met-syntax/blob/main/images/met-syntax_logo.png?raw=true" width=250px>
 
 <!--Badges-->
 
-<a href="https://github.com/blaylockbk/vscode-metconfig/issues"><img src="https://img.shields.io/github/issues/blaylockbk/vscode-metconfig?color=blue"></a>
-<a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.metconfig"><img src="https://img.shields.io/visual-studio-marketplace/v/brian-blaylock.metconfig"></a>
-<a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.metconfig"><img src="https://img.shields.io/visual-studio-marketplace/d/brian-blaylock.metconfig"></a>
+<a href="https://github.com/blaylockbk/vscode-met-syntax/issues"><img src="https://img.shields.io/github/issues/blaylockbk/vscode-met-syntax?color=blue"></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-syntax"><img src="https://img.shields.io/visual-studio-marketplace/v/brian-blaylock.met-syntax"></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-syntax"><img src="https://img.shields.io/visual-studio-marketplace/d/brian-blaylock.met-syntax"></a>
 
 <!--(end badges)-->
 </div>
@@ -15,17 +15,17 @@
 
 # About
 
-"MET config" is a VS Code extension for basic syntax highlighting for [Model Evaluation Tools](https://dtcenter.org/community-code/model-evaluation-tools-met) (MET) [configuration files](https://met.readthedocs.io/en/latest/Users_Guide/config_options.html).
+**MET syntax** is a VS Code extension for basic syntax highlighting for [Model Evaluation Tools](https://dtcenter.org/community-code/model-evaluation-tools-met) (MET) [configuration files](https://met.readthedocs.io/en/latest/Users_Guide/config_options.html).
 
 This extension looks best with dark themes in VS Code for now.
 
-It highlights the following:
+Syntax highlighting can help you visually understand the config files and help catch errors. The following are highlighted:
 
 - comments
 - strings
 - environment variables (i.e., `${ENV_VAR}`)
 - numbers
-- keywords (TRUE, FALSE, NONE, UNION, NA, SQUARE, etc.)
+- keywords (TRUE, FALSE, NONE, UNION, NA, SQUARE, etc.).
 
 <img src="https://github.com/blaylockbk/vscode-MET-Config/blob/main/images/screenshots.png?raw=true">
 
@@ -43,19 +43,28 @@ For any other files, you should manually set the file association in your settin
 
 ```json
 "files.associations": {
-    "PointStatConfig.txt": "metconfig",
-    "GridStatConfig.txt": "metconfig",
+    "myMETConfigFile": "met-syntax",
 }
 ```
 
 ## Install
 
-Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=brian-blaylock.metconfig).
+Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-syntax).
 
-Or, you can clone this repository and put the folder into your `~/.vscode/extensions` folder.
+Or, you can clone this repository into your `~/.vscode/extensions` folder.
 
-## Alternatives?
+## Potential Improvements
 
-The only alternative that produces anything similar (that I have found) is setting the code format to C/C++ because the syntax is similar enough, but this mississ highlighting MET-specific keywords and environment variables.
+I threw this together quickly after watching a tutorial, but there is potential with this extension to do so much more! If you want to make improvements, your pull requests are welcomed.
+
+- snippets
+- code validation
+- code completion
+- highlighting for METplus wrapper files
+
+
+---
 
 **Enjoy!**
+
+\- Brian Blaylock
