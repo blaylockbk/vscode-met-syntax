@@ -36,3 +36,16 @@ Hub URL: https://marketplace.visualstudio.com/manage/publishers/brian-blaylock/e
 # MET logo colors
 - Black
 - Orange #f58224
+
+
+## Writing grammer
+
+https://www.apeth.com/nonblog/stories/textmatebundle.html
+
+https://macromates.com/manual/en/language_grammars
+
+
+### Regex
+* https://macromates.com/manual/en/regular_expressions
+* https://regex101.com/
+
