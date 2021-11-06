@@ -62,7 +62,6 @@ I threw this together quickly after watching a tutorial, but there is potential 
 - code completion
 - highlighting for METplus wrapper files
 
-
 ---
 
 **Enjoy!**

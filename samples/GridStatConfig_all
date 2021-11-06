@@ -15,7 +15,7 @@ model = "WRF";
 // Output description to be written
 // May be set separately in each "obs.field" entry
 //
-desc = "Created by ${USER}";
+desc = "Created by ${USER} ON ${HOSTNAME}";
 
 //
 // Output observation type to be written
