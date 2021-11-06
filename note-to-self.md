@@ -25,9 +25,12 @@ https://code.visualstudio.com/api/working-with-extensions/publishing-extension#g
 ( Do I really have to do that every time? )
 
 It should show here in a few minutes:
-https://marketplace.visualstudio.com/items?itemName=brian-blaylock.metconfig
+https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-syntax
 
-Manage the extension: https://marketplace.visualstudio.com/manage/publishers/brian-blaylock
+Hub URL: https://marketplace.visualstudio.com/manage/publishers/brian-blaylock/extensions/met-syntax/hub
+
+
+**Manage the extension:** https://marketplace.visualstudio.com/manage/publishers/brian-blaylock
 
 
 # MET logo colors

@@ -3,9 +3,10 @@
 
 <!--Badges-->
 
-<a href="https://github.com/blaylockbk/vscode-met-syntax/issues"><img src="https://img.shields.io/github/issues/blaylockbk/vscode-met-syntax?color=blue"></a>
 <a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-syntax"><img src="https://img.shields.io/visual-studio-marketplace/v/brian-blaylock.met-syntax"></a>
 <a href="https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-syntax"><img src="https://img.shields.io/visual-studio-marketplace/d/brian-blaylock.met-syntax"></a>
+<a href="https://github.com/blaylockbk/vscode-met-syntax"><img src="https://img.shields.io/github/stars/blaylockbk/vscode-met-syntax"></a>
+<a href="https://github.com/blaylockbk/vscode-met-syntax/issues"><img src="https://img.shields.io/github/issues/blaylockbk/vscode-met-syntax?color=blue"></a>   
 
 <!--(end badges)-->
 </div>
