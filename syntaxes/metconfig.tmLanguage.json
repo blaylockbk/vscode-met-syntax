@@ -4,22 +4,73 @@
   "scopeName": "source.metconfig",
   "patterns": [
     {
-      "include": "#number"
-    },
-    {
       "include": "#comments"
     },
     {
-      "include": "#options"
+      "include": "#environment-variables"
     },
     {
-      "include": "#keywords"
+    "include": "#keywords"
+    },
+    {
+      "include": "#number"
     },
     {
       "include": "#strings"
     },
     {
-      "include": "#environment-variables"
+      "include": "#file-types"
+    },
+    {
+      "include": "#set-logic"
+    },
+    {
+      "include": "#interpolation-method"
+    },
+    {
+      "include": "#interpolation-types"
+    },
+    {
+      "include": "#interpolation-shapes"
+    },
+    {
+      "include": "#track-types"
+    },
+    {
+      "include": "#interp12-types"
+    },
+    {
+      "include": "#output-flag-values"
+    },
+    {
+      "include": "#bootstrapping-interval-type"
+    },
+    {
+      "include": "#grid-weight-flag-settings"
+    },
+    {
+      "include": "#duplicate-flag-settings"
+    },
+    {
+      "include": "#grid-decomposition-flag-settings"
+    },
+    {
+      "include": "#wavelet-types"
+    },
+    {
+      "include": "#mode-merging-types"
+    },
+    {
+      "include": "#mode-matching-types"
+    },
+    {
+      "include": "#distribution-types"
+    },
+    {
+      "include": "#pb2nc-event-stack"
+    },
+    {
+      "include": "#other-options"
     }
   ],
   "repository": {
@@ -88,14 +139,6 @@
       "match": "(?x)\n  (?<! \\w)(?:\n    (?:\n      \\.[0-9](?: _?[0-9] )*\n      |\n      [0-9](?: _?[0-9] )* \\. [0-9](?: _?[0-9] )*\n      |\n      [0-9](?: _?[0-9] )* \\.\n    ) (?: [eE][+-]?[0-9](?: _?[0-9] )* )?\n    |\n    [0-9](?: _?[0-9] )* (?: [eE][+-]?[0-9](?: _?[0-9] )* )\n  )([jJ])?\\b\n",
       "name": "constant.numeric.float.metconfig"
     },
-    "options": {
-      "patterns": [
-        {
-          "match": "\\b(NONE|BOTH|TRUE|FALSE|PCTILE|BCA|UNION|INTERSECTION|SYMDIFF|NA|SQUARE|CIRCLE|FCST|OBS|CLIMO_MEAN|CLIMO_STDEV|CLIMO_CDF|MIN|MAX|MEDIAN|UW_MEAN|DW_MEAN|AW_MEAN|LS_FIT|BLIN|NEAREST|BUDGET|FORCE|UPPER_LEFT|UPPER_RIGHT|LOWER_RIGHT|LOWER_LEFT|MAXGAUSS|BEST|GEOG_MATCH)\\b",
-          "name": "keyword.control.metconfig"
-        }
-      ]
-    },
     "strings": {
       "begin": "\"",
       "end": "\"",
@@ -110,6 +153,152 @@
           "name": "entity.name.tag.metconfig"
         }
       ]
+    },
+    "file-types": {
+      "patterns": [
+        {
+          "match": "\\b(GRIB1|GRIB2|NETCDF_MET|NETCDF_PINT|NETCDF_NCCF|PYTHON_NUMPY|PYTHON_XARRAY)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "set-logic": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|UNION|INTERSECTION|SYMDIFF)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "interpolation-method": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|NEAREST|MEDIAN|UW_MEAN|DW_MEAN|LS_FIT|BILIN|NBRHD|NEAREST|BUDGET|FORCE|BEST|UPPER_LEFT|UPPER_RIGHT|LOWER_RIGHT|LOWER_LEFT|PERC|MIN|MAX|AW_MEAN|GAUSSIAN|MAXGAUSS|GEOG_MATCH)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "interpolation-types": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|BOTH|FCST|OBS)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "interpolation-shapes": {
+      "patterns": [
+        {
+          "match": "\\b(SQUARE|CIRCLE)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "track-types": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|BOTH|ADECK|BDECK)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "interp12-types": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|FILL|REPLACE)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "output-flag-values": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|BOTH|STAT)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "bootstrapping-interval-types": {
+      "patterns": [
+        {
+          "match": "\\b(PCTILE|BCA)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "grid-weight-flag-settings": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|COS_LAT|AREA)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "duplicate-flag-settings": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|UNIQUE)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "grid-decomposition-flag-settings": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|AUTO|TILE|PAD)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "wavelet-types": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|HAAR|HAAR_CNTR|DAUB|DAUB_CNTR|BSPLINE|BSPLINE_CNTR)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "mode-merging-types": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|BOTH|THRESH|ENGINE)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "mode-matching-types": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|MERGE_BOTH|MERGE_FCST|NO_MERGE)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "distribution-types": {
+      "patterns": [
+        {
+          "match": "\\b(NONE|NONE|NORMAL|LOGNORMAL|EXPONENTIAL|CHISQUARED|GAMMA|UNIFORM|BETA)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "pb2nc-event-stack": {
+      "patterns": [
+        {
+          "match": "\\b(TOP|BOTTOM)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
+    },
+    "other-options": {
+      "patterns": [
+        {
+          "match": "\\b(TRUE|FALSE|NA|CLIMO_MEAN|CLIMO_STDEV|CLIMO_CDF|)\\b",
+          "name": "keyword.control.metconfig"
+        }
+      ]
     }
   }
 }
+
+
