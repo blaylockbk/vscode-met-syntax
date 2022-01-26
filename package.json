@@ -1,49 +1,54 @@
 {
-  "name": "met-syntax",
-  "displayName": "MET syntax",
-  "description": "Syntax highlighting for Model Evaluation Tools (MET) configuration files.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/blaylockbk/vscode-met-syntax.git"
-  },
-  "version": "0.0.1",
-  "publisher": "brian-blaylock",
-  "engines": {
-    "vscode": "^1.62.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "icon": "images/met-syntax_logo_white.png",
-  "contributes": {
-    "languages": [
-      {
-        "id": "metconfig",
-        "aliases": [
-          "MET-config",
-          "metconfig"
-        ],
-        "extensions": [
-          ".metconfig"
-        ],
-        "filenamePatterns": [
-          "*PointStatConfig*",
-          "*GridStatConfig*",
-          "*EnsembleStatConfig*",
-          "*MODEAnalysisConfig*",
-          "*PB2NCConfig*",
-          "*STATAnalysisConfig*",
-          "*WaveletStatConfig*"
-        ],
-        "configuration": "./language-configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "metconfig",
-        "scopeName": "source.metconfig",
-        "path": "./syntaxes/metconfig.tmLanguage.json"
-      }
-    ]
-  }
+	"name": "met-syntax",
+	"displayName": "MET syntax",
+	"description": "Syntax highlighting for Model Evaluation Tools (MET) configuration files.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/blaylockbk/vscode-met-syntax.git"
+	},
+	"version": "0.0.1",
+	"publisher": "brian-blaylock",
+	"engines": {
+		"vscode": "^1.62.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"icon": "images/met-syntax_logo_white.png",
+	"contributes": {
+		"languages": [
+			{
+				"id": "metconfig",
+				"aliases": [
+					"MET-config",
+					"metconfig"
+				],
+				"extensions": [
+					".metconfig"
+				],
+				"filenamePatterns": [
+					"*PointStatConfig*",
+					"*GridStatConfig*",
+					"*EnsembleStatConfig*",
+					"*MODEAnalysisConfig*",
+					"*PB2NCConfig*",
+					"*STATAnalysisConfig*",
+					"*WaveletStatConfig*"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "metconfig",
+				"scopeName": "source.metconfig",
+				"path": "./syntaxes/metconfig.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "7c0a85e6-e1aa-4524-b17a-c408a905bc27",
+		"publisherDisplayName": "Brian Blaylock",
+		"publisherId": "57d0625c-adcd-4e88-910c-5ed1f2d4f0d2"
+	}
 }

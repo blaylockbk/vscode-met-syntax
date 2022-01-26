@@ -7,16 +7,13 @@
       "include": "#comments"
     },
     {
-      "include": "#environment-variables"
-    },
-    {
-    "include": "#keywords"
-    },
-    {
       "include": "#number"
     },
     {
       "include": "#strings"
+    },
+    {
+      "include": "#keywords"
     },
     {
       "include": "#file-types"
@@ -43,7 +40,7 @@
       "include": "#output-flag-values"
     },
     {
-      "include": "#bootstrapping-interval-type"
+      "include": "#bootstrapping-interval-types"
     },
     {
       "include": "#grid-weight-flag-settings"
@@ -71,6 +68,9 @@
     },
     {
       "include": "#other-options"
+    },
+    {
+      "include": "#environment-variables"
     }
   ],
   "repository": {
@@ -92,14 +92,6 @@
         {
           "match": "\\${?.*?}",
           "name": "entity.name.tag.metconfig"
-        }
-      ]
-    },
-    "keywords": {
-      "patterns": [
-        {
-          "match": "\\b(if|while|for|return)\\b",
-          "name": "keyword.control.metconfig"
         }
       ]
     },
@@ -151,6 +143,14 @@
         {
           "match": "\\${?.*?}",
           "name": "entity.name.tag.metconfig"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "match": "\\b(if|while|for|return)\\b",
+          "name": "keyword.control.metconfig"
         }
       ]
     },
@@ -293,12 +293,10 @@
     "other-options": {
       "patterns": [
         {
-          "match": "\\b(TRUE|FALSE|NA|CLIMO_MEAN|CLIMO_STDEV|CLIMO_CDF|)\\b",
+          "match": "\\b(TRUE|FALSE|NA|CLIMO_MEAN|CLIMO_STDEV|CLIMO_CDF)\\b",
           "name": "keyword.control.metconfig"
         }
       ]
     }
   }
 }
-
-
