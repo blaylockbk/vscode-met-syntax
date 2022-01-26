@@ -16,13 +16,14 @@ git clone https://github.com/blaylockbk/vscode-met-syntax.git
 3. Open the `vscode-met-syntax` folder in vscode.
 4. Make some changes and then run the `Debug: Restart` command to see how the changes work (in the new window that pops open, open a sample config file)
 
+Remember to update the `CHANGELOG.md` file with any updates to the new version.
 
 
 ## Update the package on marketplace
 
 install vsce (I did this using conda in a new environment with npm installed, or just install vsce in the base environment)
 
-```shell
+```bash
 conda install -c conda-forge nodejs
 
 npm install -g vsce
@@ -30,7 +31,7 @@ npm install -g vsce
 cd path/to/.vscode/extensions/vscode-met-syntax
 vsce package
 
-# Here are some examples on incrementing the package version number
+# Here are some examples on incrementing the package version number. This command edits the `package.json` file
 vsce package patch   # to increment the version by 0.0.1
 vsce package minor   # to increment the version by 0.1.0
 vsce package major   # to increment the version by 1.0.0
