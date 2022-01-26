@@ -41,7 +41,12 @@ vsce publish
 You will need a personal access token.
 https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token
 
-_Do I really have to get a new personal access token every time?_
+_Do I really have to get a new personal access token every time?_ Yes, the personal access token expires.
+
+* sign into Azure DevOps: https://dev.azure.com/BlueLakeOrchard/
+* go to create new token: https://dev.azure.com/BlueLakeOrchard/_usersSettings/tokens
+* follow directions here: https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token
+* note, my publisher name is `brian-blaylock`
 
 Once you publish the extension in the marketplace, it should show here in a few minutes:
 https://marketplace.visualstudio.com/items?itemName=brian-blaylock.met-syntax
