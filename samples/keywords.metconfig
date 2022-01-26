@@ -1,0 +1,84 @@
+// ------------------------------------------------
+// Syntax highlighting for MET config file keywords
+// ------------------------------------------------
+
+// This file is used to visually confirm the syntax highlighting works which is
+// defined in ../syntaxes/metconfig.tmLanguage.json
+
+// MET's list of keywords are defined here:
+// https://github.com/dtcenter/MET/blob/e903f8fed8916dd5a97536777c48d8c191e2c7d7/met/data/config/ConfigConstants
+
+
+// File types
+GRIB1|GRIB2|NETCDF_MET|NETCDF_PINT|NETCDF_NCCF|PYTHON_NUMPY|PYTHON_XARRAY
+
+// Set logic
+NONE|UNION|INTERSECTION|SYMDIFF
+
+// Interpolation method
+NONE|NEAREST|MEDIAN|UW_MEAN|DW_MEAN|LS_FIT|BILIN|NBRHD|NEAREST|BUDGET|FORCE|
+BEST|UPPER_LEFT|UPPER_RIGHT|LOWER_RIGHT|LOWER_LEFT|PERC|MIN|MAX|AW_MEAN|
+GAUSSIAN|MAXGAUSS|GEOG_MATCH
+
+// Interpolation types
+NONE|BOTH|FCST|OBS
+
+// Interpolation shapes
+SQUARE|CIRCLE
+
+// Tack types
+NONE|BOTH|ADECK|BDECK
+
+// Interp12 Types
+NONE|FILL|REPLACE
+
+// Output flag values
+NONE|BOTH|STAT
+
+// Bootstrapping interval types
+PCTILE|BCA
+
+// Grid weight flag settings
+NONE|COS_LAT|AREA
+
+// Duplicate flag settings
+NONE|UNIQUE
+
+// Grid decompostion flag settings
+NONE|AUTO|TILE|PAD
+
+// Wavelet types
+NONE|HAAR|HAAR_CNTR|DAUB|DAUB_CNTR|BSPLINE|BSPLINE_CNTR
+
+// MODE merging types
+NONE|BOTH|THRESH|ENGINE
+
+// MODE matching types
+NONE|MERGE_BOTH|MERGE_FCST|NO_MERGE
+
+// Distribution types
+NONE|NONE|NORMAL|LOGNORMAL|EXPONENTIAL|CHISQUARED|GAMMA|UNIFORM|BETA
+
+// PB2NC event stack
+TOP|BOTTOM
+
+// Other options
+//   These were not included in the MET keyword list but I though they
+//   should be included.
+TRUE|FALSE|NA|CLIMO_MEAN|CLIMO_STDEV|CLIMO_CDF
+
+
+// ==========================================
+// Here are some words that are not highlighted keywords
+NOAA, NASA, MET, HELLO WORLD, weather, etc.
+
+// Numbers are highlighted
+12
+3.14
+
+// Strings are highlighted
+"Hello world"
+
+// Environment variables are highlighted
+${HOME}
+

@@ -13,9 +13,6 @@
       "include": "#strings"
     },
     {
-      "include": "#keywords"
-    },
-    {
       "include": "#file-types"
     },
     {
@@ -146,14 +143,6 @@
         }
       ]
     },
-    "keywords": {
-      "patterns": [
-        {
-          "match": "\\b(if|while|for|return)\\b",
-          "name": "keyword.control.metconfig"
-        }
-      ]
-    },
     "file-types": {
       "patterns": [
         {
@@ -277,7 +266,7 @@
     "distribution-types": {
       "patterns": [
         {
-          "match": "\\b(NONE|NONE|NORMAL|LOGNORMAL|EXPONENTIAL|CHISQUARED|GAMMA|UNIFORM|BETA)\\b",
+          "match": "\\b(NONE|NORMAL|LOGNORMAL|EXPONENTIAL|CHISQUARED|GAMMA|UNIFORM|BETA)\\b",
           "name": "keyword.control.metconfig"
         }
       ]
